@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Damith Bandara | Cloud & Network Engineer</title>
+
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --border: #1f2937;
+}
+
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #0284c7;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--card), var(--bg));
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+header p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.toggle-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #000;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: var(--border);
+}
+
+/* BUTTON LINKS */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+
+<header>
+  <h1>Damith Induranga Bandara</h1>
+  <p>Cloud | Network | Systems | DevOps Engineer</p>
+  <a class="btn" href="mailto:kmdibandara@gmail.com">Contact</a>
+</header>
+
+<nav>
+  <a href="#profile">Profile</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+</nav>
+
+<section id="profile">
+  <h2>Profile</h2>
+  <div class="card">
+    Final-year IT undergraduate specializing in Computer Systems & Network Engineering (SLIIT).
+    Focused on Cloud Computing, Networking, DevOps, and Enterprise Infrastructure.
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <b>Systems Administrator – Gennext (2025–Present)</b><br/>
+    Managed enterprise networks, firewalls, Microsoft Azure, M365, and hybrid infrastructure.
+  </div>
+
+  <div class="card">
+    <b>Associate Systems Engineer – ZILLIONe</b><br/>
+    Worked on Azure, Entra ID, Sentinel, Windows Server, SQL Server, SOC operations.
+  </div>
+
+  <div class="card">
+    <b>Intern Systems Engineer – ZILLIONe</b><br/>
+    Azure infrastructure, VPNs, backups, identity systems, and enterprise support.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <span class="tag">Azure</span>
+    <span class="tag">AWS</span>
+    <span class="tag">Windows Server</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Networking (CCNA)</span>
+    <span class="tag">SDN / ONOS</span>
+    <span class="tag">Firewalls</span>
+    <span class="tag">Python</span>
+    <span class="tag">SQL</span>
+    <span class="tag">VMware</span>
+    <span class="tag">DevOps</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <b>Enterprise Mail Migration (O365)</b><br/>
+    Migrated 4500+ mailboxes and transitioned hybrid identity to cloud-only architecture.
+  </div>
+
+  <div class="card">
+    <b>Zero Trust Access (ZTNA)</b><br/>
+    Implemented Microsoft Entra Private Access for secure enterprise application access.
+  </div>
+
+  <div class="card">
+    <b>Active Directory Migration</b><br/>
+    Migrated AD DS, DNS, CA from Windows Server 2016 to 2022.
+  </div>
+
+  <div class="card">
+    <b>Campus Network Design</b><br/>
+    Designed enterprise network topology using Cisco Packet Tracer.
+  </div>
+</section>
+
+<footer>
+  © 2026 Damith Bandara | Cloud & Network Engineer
+</footer>
+
+<script>
+function toggleTheme() {
+  const root = document.documentElement;
+  const current = root.getAttribute("data-theme");
+
+  if (current === "light") {
+    root.removeAttribute("data-theme");
+    localStorage.setItem("theme", "dark");
+  } else {
+    root.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// load saved theme
+const saved = localStorage.getItem("theme");
+if (saved === "light") {
+  document.documentElement.setAttribute("data-theme", "light");
+}
+</script>
+
+</body>
+</html>
